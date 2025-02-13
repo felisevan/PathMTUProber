@@ -17,10 +17,10 @@
 
 ### Running the Script
 
-In your terminal, use the following command to run the `mtu-finder.sh` script:
+In your terminal, use the following command to run the `mtu-prober.sh` script:
 
 ```bash
-./mtu-finder.sh -i <interface> -s <start_mtu> -p <peer_address>
+./mtu-prober.sh -i <interface> -s <start_mtu> -p <peer_address>
 ```
 
 ### Parameter Description
@@ -34,13 +34,13 @@ In your terminal, use the following command to run the `mtu-finder.sh` script:
 **1. Probing the Path MTU to `ipv4.google.com` using the WireGuard interface `wg0`, starting MTU is 1280:**
 
 ```bash
-./mtu-finder.sh -i wg0 -s 1280 -p ipv4.google.com
+./mtu-prober.sh -i wg0 -s 1280 -p ipv4.google.com
 ```
 
 **2. Probing the Path MTU to the IPv6 address `2404:6800::8` using the network interface `eth0`, starting MTU is 1400:**
 
 ```bash
-./mtu-finder.sh -i eth0 -s 1400 -p 2404:6800::8
+./mtu-prober.sh -i eth0 -s 1400 -p 2404:6800::8
 ```
 
 ## ⚙️ How it Works (Briefly)
